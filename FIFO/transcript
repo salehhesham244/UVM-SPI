@@ -1,0 +1,297 @@
+# 
+# 
+# 
+# 
+# //  Questa Sim-64
+# //  Version 2021.1 win64 Jan 19 2021
+# //
+# //  Copyright 1991-2021 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# vsim -voptargs="+acc" top 
+# Start time: 02:08:48 on Oct 02,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: pack_two.sv(89): (vopt-2250) Function "sample_data" has no return value assignment.
+# ** Warning: monitor.sv(29): (vopt-2240) Treating stand-alone use of function 'sample_data' as an implicit VOID cast.
+# ** Warning: monitor.sv(34): (vopt-2240) Treating stand-alone use of function 'check_data' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=3.
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.FIFO_if(fast__1)
+# Loading work.FIFO(fast)
+# Loading work.shared_pkg(fast)
+# Loading work.pack_one(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.pack_three(fast)
+# Loading work.pack_two(fast)
+# Loading work.monitor_sv_unit(fast)
+# Loading work.monitor(fast)
+vlog *v+define+SIM 
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 02:09:20 on Oct 02,2023
+# vlog -reportprogress 300 *v+define+SIM 
+# ** Error: (vlog-7) Failed to open design unit file "*v+define+SIM" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 02:09:20 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# D:/Programmes/QuestaSim/win64/vlog failed.
+vlog *v +define+SIM
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 02:09:24 on Oct 02,2023
+# vlog -reportprogress 300 FIFO.sv FIFO_if.sv monitor.sv pack_one.sv pack_three.sv pack_two.sv shared_pkg.sv tb.sv top.sv "+define+SIM" 
+# -- Compiling module FIFO
+# -- Compiling interface FIFO_if
+# ** Warning: monitor.sv(1): (vlog-13233) Design unit "monitor_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package monitor_sv_unit
+# -- Importing package pack_one
+# -- Importing package pack_two
+# -- Importing package pack_three
+# -- Importing package shared_pkg
+# -- Compiling module monitor
+# ** Warning: monitor.sv(29): (vlog-2240) Treating stand-alone use of function 'sample_data' as an implicit VOID cast.
+# ** Warning: monitor.sv(34): (vlog-2240) Treating stand-alone use of function 'check_data' as an implicit VOID cast.
+# -- Compiling package pack_one
+# ** Warning: pack_three.sv(1): (vlog-13233) Design unit "pack_three_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package pack_three_sv_unit
+# -- Compiling package pack_three
+# ** Warning: pack_three.sv(23): (vlog-2240) Treating stand-alone use of function 'reference_model' as an implicit VOID cast.
+# -- Compiling package pack_two
+# -- Compiling package shared_pkg
+# ** Warning: tb.sv(1): (vlog-13233) Design unit "tb_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package tb_sv_unit
+# -- Compiling module tb
+# ** Warning: tb.sv(19): (vlog-2240) Treating stand-alone use of function 'set_test_finish' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 02:09:24 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 02:09:32 on Oct 02,2023
+# vlog -reportprogress 300 pack_one.sv pack_two.sv pack_three.sv shared_pkg.sv FIFO_if.sv top.sv monitor.sv FIFO.sv tb.sv -define SIM "+cover" 
+# -- Compiling package pack_one
+# -- Compiling package pack_two
+# -- Importing package pack_one
+# ** Warning: pack_three.sv(1): (vlog-13233) Design unit "pack_three_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package pack_three_sv_unit
+# -- Importing package shared_pkg
+# -- Compiling package pack_three
+# ** Warning: pack_three.sv(23): (vlog-2240) Treating stand-alone use of function 'reference_model' as an implicit VOID cast.
+# -- Compiling package shared_pkg
+# -- Compiling interface FIFO_if
+# -- Compiling module top
+# ** Warning: monitor.sv(1): (vlog-13233) Design unit "monitor_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package monitor_sv_unit
+# -- Importing package pack_two
+# -- Importing package pack_three
+# -- Compiling module monitor
+# ** Warning: monitor.sv(29): (vlog-2240) Treating stand-alone use of function 'sample_data' as an implicit VOID cast.
+# ** Warning: monitor.sv(34): (vlog-2240) Treating stand-alone use of function 'check_data' as an implicit VOID cast.
+# -- Compiling module FIFO
+# ** Warning: tb.sv(1): (vlog-13233) Design unit "tb_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package tb_sv_unit
+# -- Compiling module tb
+# ** Warning: tb.sv(19): (vlog-2240) Treating stand-alone use of function 'set_test_finish' as an implicit VOID cast.
+# 
+# Top level modules:
+# 	top
+# End time: 02:09:32 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7
+# End time: 02:09:41 on Oct 02,2023, Elapsed time: 0:00:53
+# Errors: 0, Warnings: 3
+# vsim -voptargs="+acc" work.top -coverage 
+# Start time: 02:09:41 on Oct 02,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: shared_pkg.sv(8): (vopt-2250) Function "set_test_finish" has no return value assignment.
+# ** Warning: pack_two.sv(89): (vopt-2250) Function "sample_data" has no return value assignment.
+# ** Warning: pack_three.sv(23): (vopt-2240) Treating stand-alone use of function 'reference_model' as an implicit VOID cast.
+# ** Warning: pack_three.sv(22): (vopt-2250) Function "check_data" has no return value assignment.
+# ** Warning: pack_three.sv(97): (vopt-2250) Function "reference_model" has no return value assignment.
+# ** Warning: monitor.sv(29): (vopt-2240) Treating stand-alone use of function 'sample_data' as an implicit VOID cast.
+# ** Warning: monitor.sv(34): (vopt-2240) Treating stand-alone use of function 'check_data' as an implicit VOID cast.
+# ** Warning: tb.sv(19): (vopt-2240) Treating stand-alone use of function 'set_test_finish' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.FIFO_if(fast__1)
+# Loading work.FIFO(fast)
+# Loading work.shared_pkg(fast)
+# Loading work.pack_one(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.pack_three(fast)
+# Loading work.pack_two(fast)
+# Loading work.monitor_sv_unit(fast)
+# Loading work.monitor(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Saleh  Hostname: SALEHHESHAM  ProcessID: 6300
+#           Attempting to use alternate WLF file "./wlft1d0des".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlft1d0des
+# the correct_count =808
+# the error_count =0
+# ** Note: $stop    : monitor.sv(41)
+#    Time: 404 ns  Iteration: 0  Instance: /top/mon
+# Break in Module monitor at monitor.sv line 41
+# Saving coverage database on exit...
+# End time: 02:10:13 on Oct 02,2023, Elapsed time: 0:00:32
+# Errors: 0, Warnings: 10
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 02:10:13 on Oct 02,2023
+# vcover report top.ucdb -all -annotate -details -output coverage.txt 
+# End time: 02:10:13 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+do run.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Errors: 0, Warnings: 1
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 02:13:05 on Oct 02,2023
+# vlog -reportprogress 300 pack_one.sv pack_two.sv pack_three.sv shared_pkg.sv FIFO_if.sv top.sv monitor.sv FIFO.sv tb.sv -define SIM "+cover" 
+# -- Compiling package pack_one
+# -- Compiling package pack_two
+# -- Importing package pack_one
+# -- Compiling package pack_three_sv_unit
+# -- Importing package shared_pkg
+# -- Compiling package pack_three
+# ** Warning: pack_three.sv(23): (vlog-2240) Treating stand-alone use of function 'reference_model' as an implicit VOID cast.
+# -- Compiling package shared_pkg
+# -- Compiling interface FIFO_if
+# -- Compiling module top
+# -- Compiling package monitor_sv_unit
+# -- Importing package pack_two
+# -- Importing package pack_three
+# -- Compiling module monitor
+# ** Warning: monitor.sv(29): (vlog-2240) Treating stand-alone use of function 'sample_data' as an implicit VOID cast.
+# ** Warning: monitor.sv(34): (vlog-2240) Treating stand-alone use of function 'check_data' as an implicit VOID cast.
+# -- Compiling module FIFO
+# -- Compiling package tb_sv_unit
+# -- Compiling module tb
+# ** Warning: tb.sv(19): (vlog-2240) Treating stand-alone use of function 'set_test_finish' as an implicit VOID cast.
+# 
+# Top level modules:
+# 	top
+# End time: 02:13:05 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 4
+# vsim -voptargs="+acc" work.top -coverage 
+# Start time: 02:13:05 on Oct 02,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: tb.sv(19): (vopt-2240) Treating stand-alone use of function 'set_test_finish' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=1.
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.FIFO_if(fast__1)
+# Loading work.FIFO(fast)
+# Loading work.shared_pkg(fast)
+# Loading work.pack_one(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.pack_three(fast)
+# Loading work.pack_two(fast)
+# Loading work.monitor_sv_unit(fast)
+# Loading work.monitor(fast)
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+#           File in use by: Saleh  Hostname: SALEHHESHAM  ProcessID: 6300
+#           Attempting to use alternate WLF file "./wlfte4sn22".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+#           Using alternate file: ./wlfte4sn22
+# the correct_count =80008
+# the error_count =0
+# ** Note: $stop    : monitor.sv(41)
+#    Time: 40004 ns  Iteration: 0  Instance: /top/mon
+# Break in Module monitor at monitor.sv line 41
+# Saving coverage database on exit...
+# End time: 02:13:32 on Oct 02,2023, Elapsed time: 0:00:27
+# Errors: 0, Warnings: 3
+# QuestaSim-64 vcover 2021.1 Coverage Utility 2021.01 Jan 19 2021
+# Start time: 02:13:33 on Oct 02,2023
+# vcover report top.ucdb -all -annotate -details -output coverage.txt 
+# End time: 02:13:33 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vlog *v+define+SIM
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 02:14:45 on Oct 02,2023
+# vlog -reportprogress 300 *v+define+SIM 
+# ** Error: (vlog-7) Failed to open design unit file "*v+define+SIM" in read mode.
+# No such file or directory. (errno = ENOENT)
+# End time: 02:14:45 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+# D:/Programmes/QuestaSim/win64/vlog failed.
+vlog *v +define+SIM
+# QuestaSim-64 vlog 2021.1 Compiler 2021.01 Jan 19 2021
+# Start time: 02:14:48 on Oct 02,2023
+# vlog -reportprogress 300 FIFO.sv FIFO_if.sv monitor.sv pack_one.sv pack_three.sv pack_two.sv shared_pkg.sv tb.sv top.sv "+define+SIM" 
+# -- Compiling module FIFO
+# -- Compiling interface FIFO_if
+# ** Warning: monitor.sv(1): (vlog-13233) Design unit "monitor_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package monitor_sv_unit
+# -- Importing package pack_one
+# -- Importing package pack_two
+# -- Importing package pack_three
+# -- Importing package shared_pkg
+# -- Compiling module monitor
+# ** Warning: monitor.sv(29): (vlog-2240) Treating stand-alone use of function 'sample_data' as an implicit VOID cast.
+# ** Warning: monitor.sv(34): (vlog-2240) Treating stand-alone use of function 'check_data' as an implicit VOID cast.
+# -- Compiling package pack_one
+# ** Warning: pack_three.sv(1): (vlog-13233) Design unit "pack_three_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package pack_three_sv_unit
+# -- Compiling package pack_three
+# ** Warning: pack_three.sv(23): (vlog-2240) Treating stand-alone use of function 'reference_model' as an implicit VOID cast.
+# -- Compiling package pack_two
+# -- Compiling package shared_pkg
+# ** Warning: tb.sv(1): (vlog-13233) Design unit "tb_sv_unit" already exists and will be overwritten. Design unit compiled with different set of options.
+# -- Compiling package tb_sv_unit
+# -- Compiling module tb
+# ** Warning: tb.sv(19): (vlog-2240) Treating stand-alone use of function 'set_test_finish' as an implicit VOID cast.
+# -- Compiling module top
+# 
+# Top level modules:
+# 	top
+# End time: 02:14:48 on Oct 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 7
+vsim -voptargs=+acc top
+# vsim -voptargs="+acc" top 
+# Start time: 02:14:56 on Oct 02,2023
+# ** Note: (vsim-3813) Design is being optimized due to module recompilation...
+# ** Warning: shared_pkg.sv(8): (vopt-2250) Function "set_test_finish" has no return value assignment.
+# ** Warning: pack_two.sv(89): (vopt-2250) Function "sample_data" has no return value assignment.
+# ** Warning: pack_three.sv(23): (vopt-2240) Treating stand-alone use of function 'reference_model' as an implicit VOID cast.
+# ** Warning: pack_three.sv(22): (vopt-2250) Function "check_data" has no return value assignment.
+# ** Warning: pack_three.sv(97): (vopt-2250) Function "reference_model" has no return value assignment.
+# ** Warning: monitor.sv(29): (vopt-2240) Treating stand-alone use of function 'sample_data' as an implicit VOID cast.
+# ** Warning: monitor.sv(34): (vopt-2240) Treating stand-alone use of function 'check_data' as an implicit VOID cast.
+# ** Warning: tb.sv(19): (vopt-2240) Treating stand-alone use of function 'set_test_finish' as an implicit VOID cast.
+# ** Note: (vsim-12126) Error and warning message counts have been restored: Errors=0, Warnings=8.
+# Loading sv_std.std
+# Loading work.top(fast)
+# Loading work.FIFO_if(fast__1)
+# Loading work.FIFO(fast)
+# Loading work.shared_pkg(fast)
+# Loading work.pack_one(fast)
+# Loading work.tb_sv_unit(fast)
+# Loading work.tb(fast)
+# Loading work.pack_three(fast)
+# Loading work.pack_two(fast)
+# Loading work.monitor_sv_unit(fast)
+# Loading work.monitor(fast)
+run -all
+# the correct_count =80008
+# the error_count =0
+# ** Note: $stop    : monitor.sv(41)
+#    Time: 40004 ns  Iteration: 0  Instance: /top/mon
+# Break in Module monitor at monitor.sv line 41
+coverage report -detail -cvg -directive -comments -output fcover_report.txt /pack_two/FIFO_coverage/cvg
+# End time: 02:16:34 on Oct 02,2023, Elapsed time: 0:01:38
+# Errors: 0, Warnings: 8

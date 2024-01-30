@@ -1,0 +1,15 @@
+1-will test the wr_ack flag from the golden model(refference task) and by assertions.
+
+2-will test the data_out flag from the golden model(refference task).
+
+3-will test the full flag from the golden model(refference task) and by assertions.
+
+4-will test the empty flag from the golden model(refference task) and by assertions.
+
+5-will test the almostfull flag from the golden model(refference task) and by assertions.
+
+6-will test the almostempty flag from the golden model(refference task) and by assertions.
+
+7-will test the overflow flag from the golden model(refference task) and by assertions.
+
+8-will test the underflow flag from the golden model(refference task) and by assertions.
